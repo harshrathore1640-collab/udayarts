@@ -8,6 +8,7 @@ interface CraftImageProps {
   fallbackTone?: string;
   title?: string;
   subtitle?: string;
+  priority?: boolean;
 }
 
 export const CraftImage: React.FC<CraftImageProps> = ({
@@ -18,6 +19,7 @@ export const CraftImage: React.FC<CraftImageProps> = ({
   fallbackTone = '#2A2520',
   title,
   subtitle,
+  priority = false,
 }) => {
   const [hasError, setHasError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -90,7 +92,8 @@ export const CraftImage: React.FC<CraftImageProps> = ({
           src={src}
           alt={alt}
           referrerPolicy="no-referrer"
-          loading="lazy"
+          loading={priority ? 'eager' : 'lazy'}
+          fetchPriority={priority ? 'high' : undefined}
           onLoad={() => setIsLoaded(true)}
           onError={() => setHasError(true)}
           className={`w-full h-full object-cover transition-all duration-700 ${

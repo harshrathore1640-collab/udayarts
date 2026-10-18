@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { BRAND_CONFIG } from '../data/content.ts';
 import { CraftImage } from './CraftImage.tsx';
+import heroReliefImage from '../assets/hero-relief.jpg';
 
 interface HeroProps {
   onExploreCraft: () => void;
@@ -17,15 +18,16 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCraft, onOpenEnquiry }) => 
       {/* Background Craftsmanship Visual with Scrim Overlay */}
       <div className="absolute inset-0 z-0">
         <CraftImage
-          src="https://openaccess-cdn.clevelandart.org/1961.93/1961.93_web.jpg"
-          alt="Master hand-carved stone temple sanctum and architectural sculpture"
-          className="w-full h-full object-cover"
+          src={heroReliefImage}
+          alt="Master hand-carved Kalpavriksha and Kamadhenu stone relief sculpture by Uday Arts Atelier"
+          className="w-full h-full object-cover object-[65%_center] sm:object-center"
           fallbackTone="#201D1A"
           title="Uday Arts Master Atelier"
-          subtitle="Artisanal Architecture & Sacred Sculpture"
+          subtitle="Kamadhenu & Kalpavriksha Sacred Stone Relief"
+          priority
         />
         {/* Measured curatorial contrast scrim */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#24231E] via-[#24231E]/60 to-[#24231E]/40 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#24231E] via-[#24231E]/55 to-[#24231E]/45 pointer-events-none" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(36,35,31,0.6)_100%)] pointer-events-none" />
       </div>
 
@@ -115,6 +117,19 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCraft, onOpenEnquiry }) => 
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-60 hover:opacity-100 transition-opacity">
         <span className="text-[10px] uppercase tracking-[0.25em] text-[#E9E0D2]">Scroll</span>
         <div className="w-px h-6 bg-gradient-to-b from-[#E9E0D2] to-transparent" />
+      </div>
+
+      {/* Curatorial Masterwork Label */}
+      <div className="hidden lg:flex absolute bottom-8 right-8 z-10 items-center gap-3 bg-[#1C1A17]/85 backdrop-blur-md border border-[#96764B]/35 px-4 py-2.5 rounded-xs text-left shadow-xl pointer-events-none">
+        <div className="w-2 h-2 rounded-full bg-[#96764B] ring-4 ring-[#96764B]/20" />
+        <div>
+          <p className="text-[10px] uppercase tracking-[0.2em] text-[#96764B] font-sans font-medium">
+            Atelier Masterpiece
+          </p>
+          <p className="text-xs font-serif text-[#F7F4EE]">
+            Kamadhenu & Kalpavriksha Stone Relief
+          </p>
+        </div>
       </div>
     </section>
   );

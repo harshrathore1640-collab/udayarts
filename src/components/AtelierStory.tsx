@@ -14,16 +14,16 @@ export const AtelierStory: React.FC = () => {
           <div className="lg:col-span-5 space-y-4">
             <div className="relative rounded-xs overflow-hidden border border-[#3A332B]">
               <CraftImage
-                src="https://openaccess-cdn.clevelandart.org/2007.155/2007.155_web.jpg"
-                alt="Master stone carver working in atelier studio"
+                src="/images/buddha-green-stone-sanctum.jpg"
+                alt="Monolithic Meditating Buddha in Jade Green Granite courtyard installation"
                 aspectRatio="3/4"
                 className="w-full object-cover"
-                title="The Sculptor's Hand"
-                subtitle="Monolithic Granite Masterwork"
+                title="Monolithic Green Stone Masterwork"
+                subtitle="Imperial Granite Courtyard Sanctum"
               />
             </div>
             <div className="flex items-center justify-between text-xs text-[#777168] font-serif italic">
-              <span>Rajasthan Atelier Workshop · Raw block to finished sanctum</span>
+              <span>Rajasthan Atelier Workshop · Raw monolithic block to sanctum</span>
               <span className="font-sans not-italic text-[#96764B] uppercase tracking-wider text-[11px]">
                 Tradition & Innovation
               </span>

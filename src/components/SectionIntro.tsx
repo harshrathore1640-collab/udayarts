@@ -87,17 +87,17 @@ export const SectionIntro: React.FC<SectionIntroProps> = ({ onOpenEnquiry }) => 
           <div className="lg:col-span-5">
             <div className="relative group">
               <CraftImage
-                src="https://openaccess-cdn.clevelandart.org/1987.147/1987.147_web.jpg"
-                alt="Master sculptor fine detailing a stone deity statue"
+                src="/images/buddha-sandstone-relief.jpg"
+                alt="Architectural Dhyana Buddha High-Relief Stone Panel"
                 aspectRatio="4/3"
                 className="rounded-xs shadow-md border border-[#DED6CA]"
-                title="Master Hand Chiseling Detail"
-                subtitle="Chiseled Sandstone Sculpture"
+                title="Dhyana Buddha Bas-Relief"
+                subtitle="Hand-Chiseled Architectural Sandstone"
               />
               <div className="mt-3 flex items-center justify-between text-xs text-[#777168] font-serif italic">
-                <span>Fig. 01 — Direct chisel sculpting of sacred deity drapery</span>
+                <span>Fig. 01 — Architectural high-relief carving in natural sandstone</span>
                 <span className="font-sans not-italic text-[11px] uppercase tracking-wider text-[#96764B]">
-                  Atelier Archive
+                  Atelier Commission
                 </span>
               </div>
             </div>
