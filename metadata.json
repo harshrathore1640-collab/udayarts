@@ -1,0 +1,6 @@
+{
+  "name": "Uday Arts — Artisanal Architecture & Sculpture",
+  "description": "Bespoke handcrafted sculptures, divine idols, 3D stone crafting, and intricate architectural installations for temples, luxury residences, and international projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
